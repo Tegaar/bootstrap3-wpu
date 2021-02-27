@@ -1,0 +1,228 @@
+html{
+    position: relative;
+}
+
+body{
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+hr{
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.navbar{
+    background-image: url('../img/wp12.jpg');
+    border: 0px;
+}
+
+.navbar-header{
+    color: white;
+}
+
+.jumbotron{
+    background-image: url('../img/wp12.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    height: 800px;
+    
+    
+}
+
+.jumbotron h1, .jumbotron p{
+    color: rgb(45, 31, 175);
+    text-shadow: 0px 3px 1px rgb(255, 255, 255);
+    
+}
+span.skiri{
+    text-shadow: -1px 4px 1px rgb(255, 255, 255);
+}
+span.skanan{
+    text-shadow: -1px 4px 1px rgb(255, 255, 255);
+}
+
+.jumbotron h1{
+    transform: scale(1);
+}
+
+.jumbotron img{
+    width: 200px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+    margin-bottom: 100px;
+}
+
+hr{
+    width: 250px;
+    border-top: 4px solid cadetblue;
+}
+
+section{
+    min-height: 600px;
+}
+
+.contact{
+    min-height: 800px;
+}
+.pKiri, .pKanan{
+    opacity: 0;
+    transform: translate(-50px, 0) 
+    rotate(15deg);
+    transition: 1s;
+}
+.pKanan{
+    transform: translate(50px, 0)
+    rotate(-15deg);
+    
+
+}
+.pKiri.pMuncul, .pKanan.pMuncul{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio .thumbnail{
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+.portfolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+.kotakportofolio{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0%;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    overflow: hidden;
+    transition: .3s;
+}
+.kotakportofolio h3{
+    margin-top: 30%;
+    color: white;
+}
+
+
+.portfolio .row a:hover .kotakportofolio{
+    opacity: 100%;
+}
+
+.project_gambar{
+    background-image: url("../img/wp.jpg");
+    background-attachment: fixed;
+    
+    background-size: cover;
+    color: wheat;
+    
+}
+
+.project{
+    margin-bottom: 50px;
+}
+
+.project .kotakk{
+    /* background-color: royalblue; */
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+
+
+.project_gambar p{
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 10px cadetblue;
+    line-height: 0px;
+    margin-top: 30%;
+    color: wheat;
+    transform: translate(0,0);
+}
+
+.project_gambar h3{
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+.kotak{
+    overflow: hidden;
+    transition: .3s;
+}
+.kotak .teks{
+    opacity: 0%;
+    transition: 1s;
+    transform: translate(350px, 0px);
+}
+.kotak .teks.muncul{
+    opacity: 100%;
+    transform: translate(0px, 0px);
+}
+
+.kotak .teksp{
+    opacity: 0%;
+    transition: 1s;
+    transform: translate(-350px, 0px);
+}
+
+.kotak .teksp.muncul{
+    opacity: 100%;
+    transform: translate(0px, 0px);
+}
+.kotak:hover{
+    transform: scale(2);
+}
+
+.portfolio .thumbnail{
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+.portfolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 0px;
+    background-image: url("../img/wp.jpg");
+    background-attachment: fixed;
+    background-position: 0px -800px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+footer p{
+    /* border: 1px solid red; */
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    padding-top: 30px;
+}
+
+footer a{
+    color: rgb(200, 210, 236);
+}
+
+
+footer .btn-danger{
+    background-color: rgba(65, 105, 225, 0);
+    border:1px solid cadetblue;
+}
+
+footer a:hover{
+    color: rgb(255, 0, 0);
+}
+
+/* .about, .portfolio, .home, .contact, body{
+    background-color: rgba(65, 105, 225, 0.13);
+} */
+
+
