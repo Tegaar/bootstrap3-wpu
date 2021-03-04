@@ -15,6 +15,22 @@ $('.page-scroll').on('click', function(e){
     e.preventDefault();
 
 });
+$('.project-scroll').on('click', function(e){
+
+    // ambil isi href
+    var tujuan =$(this).attr('href');
+    // Tangkap elemen yang bersangkutan
+    var elemenTujuan = $(tujuan);
+
+
+    // pindahkan scroll
+    $('body, html').animate({ 
+        scrollTop: elemenTujuan.offset().top - -90
+    }, 1250, 'easeInOutExpo');
+
+    e.preventDefault();
+
+});
 
 // Paralax
 // about
