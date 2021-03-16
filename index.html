@@ -226,22 +226,33 @@
 			</div>
 
 			<div class="col-sm-6 col-sm-offset-3">
-				<form action="">
+				<form name="wpu-bt3-contact">
+					<!-- <div class="alert alert-success alert-dismissible fade show d-none alert-contact" role="alert">
+						<strong>Woke, Terima kasih</strong> tar pesannya gw cek.
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div> -->
+
+					<div class="alert alert-info alert-dismissible alert-contact d-none" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+								<strong>Woke, Terima kasih</strong> tar pesannya gw cek.
+					</div>
+
 					<div class="form-group">
 						<label for="name">Name :</label>
-						<input id="name" class="form-control" type="text" placeholder="Your Name">
+						<input id="name" class="form-control" type="text" placeholder="Your Name" name="namas">
 					</div>
 					<div class="form-group">
 						<label for="email">Email :</label>
-						<input class="form-control" type="email" id="email" placeholder="Your Email">
+						<input class="form-control" type="email" id="email" placeholder="Your Email" name="emails">
 					</div>
 					<div class="form-group">
 						<label for="telp">Telephone :</label>
-						<input type="tel" id="telp" class="form-control" placeholder="Your Telephone">
+						<input type="tel" id="telp" class="form-control" placeholder="Your Telephone" name="telephones">
 					</div>
 					<div class="form-group">
 						<label for="priority">Priority :</label>
-						<select id="priority" class="form-control ">
+						<select id="priority" class="form-control " name="prioritys">
 							<option value="Satu">Satu</option>
 							<option value="Satu">Dua</option>
 							<option value="Satu">Tiga</option>
@@ -249,10 +260,15 @@
 					</div>
 					<div class="form-group">
 						<label for="message">Message :</label>
-						<textarea class="form-control" name="" id="message"  rows="5" placeholder="Message"></textarea>
+						<textarea class="form-control" name="" id="messages"  rows="5" placeholder="Message" name="messages"></textarea>
 					</div>
 
-					<button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-send"></i></button>
+					<button type="submit" class="btn btn-primary btn-kirim"><i class="glyphicon glyphicon-send"></i></button>
+
+					<button class="btn btn-primary d-none btn-loading" type="button" disabled>
+						<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Sabar Bro
+					</button>
 				</form>
 			</div>
 		</div>

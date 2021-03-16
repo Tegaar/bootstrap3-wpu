@@ -1,6 +1,11 @@
 html{
     position: relative;
 }
+.d-none{
+    display: none;
+}
+
+
 
 body{
     margin-bottom: 120px;
