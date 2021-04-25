@@ -15,6 +15,8 @@ $('.page-scroll').on('click', function(e){
     e.preventDefault();
 
 });
+
+// project
 $('.project-scroll').on('click', function(e){
 
     // ambil isi href
